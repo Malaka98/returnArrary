@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int getarray(void);
+int *getarray(void);
 
 int main(void) {
 
-    int ptr;
+    int *ptr;
 
     ptr = getarray();
 
@@ -21,7 +21,7 @@ int main(void) {
 
 int *getarray(void) {
 
-     int arr[5];
+    static int arr[5];
 
     printf("Enter value in array: ");
 
