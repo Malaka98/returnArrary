@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int getarray(void);
+int *getarray(void);
 
 int main(void) {
 
-    int ptr;
+    int *ptr;
 
     ptr = getarray();
 
