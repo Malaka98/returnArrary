@@ -21,7 +21,7 @@ int main(void) {
 
 int *getarray(void) {
 
-     int arr[5];
+    static int arr[5];
 
     printf("Enter value in array: ");
 
